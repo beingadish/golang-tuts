@@ -4,7 +4,7 @@ import "fmt"
 
 // ====================== GENERICS EXPLAINATION USING GENERIC STACK IMPLEMENTATION ===============================
 
-// Only String & Int Type Slices are allowed
+// Only String & Int Type Slices are allowed (try => T comparable)
 func printSlice[T string | int](nums ...T) {
 	for _, val := range nums {
 		fmt.Println(val)
